@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,regular,500,600,700,800,900);
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#container{
+    height: 100vh;
+    position: relative;
+    background-color: var(--Dark-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+.top-bg{
+    position: absolute;
+    background-image: url(images/bg-pattern-top.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 978px;
+    width: 978px;
+    top: -528px;
+    left: 0px;
+}
+.bottom-bg{
+    position: absolute;
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 978px;
+    width: 978px;
+    bottom: -600px;
+    right: -200px;
+}
+
+.card{
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    z-index: 9;
+    height: 340px;
+    width: 350px;
+    border-radius: .5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Kumbh Sans";
+}
+
+.card .profile{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card .profile img{
+    border: 4px solid white;
+    border-radius: 50%;
+}
+.card .profile h3{
+    margin-top: 10px;
+}
+.card .profile h3 span{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.card .profile p{
+    margin-top: 6px;
+    font-size: 14px;
+    opacity: .7;
+}
+
+.card .footer{
+    width: 100%;
+    border-top: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.card .footer .sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .footer .sub h5{
+    font-size: 16px;
+    font-weight: 700;
+}
+.card .footer .sub span{
+    font-size: 12px;
+    opacity: .7;
+}
+
+@media (max-width: 768px) {
+    .card{    
+        height: 340px;
+    width: 280px;
+}
+}
